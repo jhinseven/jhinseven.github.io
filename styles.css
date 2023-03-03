@@ -17,7 +17,7 @@ html {
 }
 
 @font-face {
-  font-family: 'Century Gothic';
+  font-family: 'Century GothicB';
   src: url('gothicb-webfont.woff2') format('woff2'),
        url('gothicb-webfont.woff') format('woff');
   font-weight: normal;
