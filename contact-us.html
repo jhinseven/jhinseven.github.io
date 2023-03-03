@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <title>LADZ International</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <script src="scripts.js"></script>
+</head>
+<body>
+  <!-- Header section -->
+  <header class="header-main" id="header">
+    <a href="index.html"><img src="https://i.ibb.co/Wn7zkSc/LADZ.png" class="logo" alt="LADZ" border="0"> </a>
+    <nav>
+      <ul id="nav-list">
+        <li><a class="nav-links" href="our-services.html">Services</a></li>
+        <li><a class="nav-links" href="#">Testimonials</a></li>
+        <li><a class="nav-links" href="our-team.html">Our Team</a></li>
+        <li><a class="nav-links" class="nav-cta" href="contact-us.html">Contact Us</a></li>
+      </ul>
+
+      <div id="myNav" class="overlay">
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <!-- Overlay content -->
+        <div class="overlay-content">
+          <a href="index.html">Home</a>
+          <a href="our-services.html">Services</a>
+          <a href="#">Testimonials</a>
+          <a href="our-team.html">Our Team</a>
+          <a href="contact-us.html">Contact Us</a>
+        </div>
+      </div>
+      
+      <!-- Use any element to open/show the overlay navigation menu -->
+      <p class="menu"><span onclick="openNav()">Menu</span></p>
+    </nav>
+  </header>
+  <main>
+  <div class="ct-page-container">
+    <div class="section-title">
+      <h1 class="section-header" data-aos="fade-right">Contact Us BABYYYYY!!!!!</h1>
+    </div>
+    <div class="ct-container">
+        <!-- Image -->
+        <div class="ct-image-container" data-aos="zoom-in">
+          <img src="sample.jpg" class="ct-image" alt="Contact us!">
+        </div>
+        <!-- Submit Form -->
+        <div class="form-container" data-aos="zoom-in">
+        <form action="/submit-form" method="post">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required><br>
+        
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea><br>
+        
+          <input type="submit" value="Submit">
+        </form>
+        </div>
+    </div>
+  </div>
+  </main>
+  <footer class="my-footer">
+    <p>Copyright © 2023 LADZ International</p>
+  </footer>
+
+  <!-- AOS Animations -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      easing: 'ease',
+      duration: 800,
+    });
+  </script>
+
+</body>
+</html>
