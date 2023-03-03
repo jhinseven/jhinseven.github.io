@@ -7,6 +7,24 @@ html {
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'Century Gothic';
+  src: url('century_gothic-webfont.woff2') format('woff2'),
+       url('century_gothic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'Century Gothic';
+  src: url('gothicb-webfont.woff2') format('woff2'),
+       url('gothicb-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
 body {
   font-family: "Century Gothic", sans-serif;
   margin: 0;
