@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <title>LADZ International</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- Favicon -->
+  <link href="img/favicon.ico" rel="icon">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+  <script src="scripts.js"></script>
+</head>
+<body>
+  <!-- Header section -->
+  <header class="header-main" id="header">
+    <a href="index.html"><img src="https://i.ibb.co/Wn7zkSc/LADZ.png" class="logo" alt="LADZ" border="0"> </a>
+    <nav>
+      <ul id="nav-list">
+        <li><a class="nav-links" href="our-services.html">Services</a></li>
+        <li><a class="nav-links" href="#">Testimonials</a></li>
+        <li><a class="nav-links" href="our-team.html">Our Team</a></li>
+        <li><a class="nav-links" class="nav-cta" href="contact-us.html">Contact Us</a></li>
+      </ul>
+
+      <div id="myNav" class="overlay">
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <!-- Overlay content -->
+        <div class="overlay-content">
+          <a href="index.html">Home</a>
+          <a href="our-services.html">Services</a>
+          <a href="#">Testimonials</a>
+          <a href="our-team.html">Our Team</a>
+          <a href="contact-us.html" class="menu-cta">Contact Us</a>
+        </div>
+      </div>
+      
+      <!-- Use any element to open/show the overlay navigation menu -->
+      <p class="menu"><span onclick="openNav()">Menu</span></p>
+
+    </nav>
+  </header>
+  
+  <main>
+    <!-- Hero section -->
+    <section class="hero">
+      <div id="hero-text">
+      <h1 class="hero-header">LADZ INTERNATIONAL</h1>
+      <p class="hero-slogan">We offer top-notch services for your needs</p>
+      <a href="contact-us.html" class="cta">Contact Us</a>
+      </div>
+    </section>
+
+    <!-- Sidebar -->
+    
+    <div class="sidebar">
+        <div class="icon">
+          <img src="fb.png" alt="FB">
+        </div>
+        <div class="icon">
+          <img src="tiktok.png" alt="tiktok">
+        </div>
+        <div class="icon">
+          <img src="dc.png" alt="dc">
+        </div>
+    </div>
+
+    <!-- About Us section --> 
+
+    <section class="about-us">
+      <div class="about-us-content">
+        <h2 data-aos="fade-right">About Us</h2>
+        <p data-aos="fade-right">LADZ International started with a 1-man team, encouraging all his friends to join a challenging yet amazing journey in the freelancing industry. Starting with the core team, Joshua Ladero (CEO) built LADZ International with a dream of becoming the next top multi-service company in the world. With his business-driven mindset, his skills in video editing were not only used for his clients but was also used to help those fully potential editors land a job. He decided to provide other services on September 25, 2022, when the company officially offered Virtual Assistance for business owners. The company aims to help clients by providing quality services and employees by providing continuous learning through training sessions. The core members now consist of the  COO Jona Wong, Accounting Officer Victoria Paredes, Social Media Manager Reinier Ormita Training Specialist, Darlene Divine Tisbe, Cold Calling Manager Christian Clavo, and Head Scriptwriter Ashley Vivar.</p>
+      </div>
+      <div class="vision-mission">
+      <div class="vision-content" data-aos="slide-up">
+          <h3>Vision</h3>
+          <p>Be the most trusted and reputable company in the world by providing high-quality leads, outstanding customer service, and flawless video editing services.</p>
+      </div>
+      <div class="mission-content" data-aos="slide-up">
+        <h3>Mission</h3>
+          <p>To envision a better environment where business owners manage their time for work without compromising the time for family by delegating tasks to our highly professional employees whilst maintaining a healthy working environment and providing a sustainable income-generating livelihood. 
+          </p>
+      </div>
+      </div>
+      <ul data-aos="zoom-in">
+        <li><strong>Address:</strong> ***</li>
+        <li><strong>Email:</strong> ***@example.com</li>
+        <li><strong>Phone:</strong> (123) 456-7890</li>
+      </ul>
+    </section>
+    
+
+  </main>
+  <footer class="my-footer">
+    <p>Copyright © 2023 LADZ International</p>
+  </footer>
+
+  <!-- AOS Animations -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      easing: 'ease',
+      delay: 200,
+      duration: 800,
+    });
+  </script>
+
+</body>
+</html>
