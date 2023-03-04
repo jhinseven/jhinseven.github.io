@@ -8,7 +8,7 @@ html {
 }
 
 @font-face {
-  font-family: 'century_gothicregular';
+  font-family: 'Century Gothic';
   src: url('century_gothic-webfont.woff2') format('woff2'),
        url('century_gothic-webfont.woff') format('woff');
   font-weight: normal;
@@ -17,16 +17,16 @@ html {
 }
 
 @font-face {
-  font-family: 'century_gothicbold';
+  font-family: 'Century Gothic';
   src: url('gothicb-webfont.woff2') format('woff2'),
        url('gothicb-webfont.woff') format('woff');
-  font-weight: normal;
+  font-weight: bold;
   font-style: normal;
 
 }
 
 body {
-  font-family: 'century_gothicregular','Apple Gothic', Arial, sans-serif;
+  font-family: 'Century Gothic','Apple Gothic', Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
