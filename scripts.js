@@ -23,7 +23,6 @@ window.addEventListener("scroll", function() {
 });
 
 
-
 /* Menu */
 /* Open when someone clicks on the span element */
 function openNav() {
@@ -33,4 +32,6 @@ function openNav() {
 function closeNav() {
   document.getElementById("myNav").style.width = "0%";
 }
+
+/* Testimonials */
 

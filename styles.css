@@ -814,6 +814,73 @@ input[type="submit"]:hover {
 
 /* Testimonials Page */
 
+.tst-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  margin:0;
+  padding: 120px 0px;
+  background-image: url(Resources/our-team-bg.jpg);
+}
+
+.tst-contents {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: auto;
+  display: flex;
+  padding: 2px;
+  width: 90%;
+}
+
+.tst-texts {
+  margin: auto;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.tst-cards-container {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 100%;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  border-radius: 20px;
+  padding: 3px;
+  width: 60%;
+  border-bottom: 4px solid black;
+  border-top: 4px solid black;
+}
+
+@media (max-width:450px) {
+  .tst-container {
+    padding-top: 75px;
+  }
+  .tst-cards-container {
+    width: 90%;
+  }
+  .tst-texts {
+    font-size: 20px;
+  }
+}
+
+.tst-cards-container > * {
+  scroll-snap-align: start;
+}
+
+.tst-cards {
+  text-align: center;
+  padding: 5%;
+}
+
+.tst-image {
+  width: 30%;
+  border-radius: 50%;
+}
 
 /* Footer Styles */
 

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <title>LADZ International</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+  <script src="scripts.js"></script>
+</head>
+<body>
+  <!-- Header section -->
+  <header class="header-main" id="header">
+    <a href="index.html"><img src="https://i.ibb.co/Wn7zkSc/LADZ.png" class="logo" alt="LADZ" border="0"> </a>
+    <nav>
+      <ul id="nav-list">
+        <li><a class="nav-links" href="our-services.html">Services</a></li>
+        <li><a class="nav-links" href="#">Testimonials</a></li>
+        <li><a class="nav-links" href="our-team.html">Our Team</a></li>
+        <li><a class="nav-links" class="nav-cta" href="contact-us.html">Contact Us</a></li>
+      </ul>
+
+      <div id="myNav" class="overlay">
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <!-- Overlay content -->
+        <div class="overlay-content">
+          <a href="index.html">Home</a>
+          <a href="our-services.html">Services</a>
+          <a href="#">Testimonials</a>
+          <a href="our-team.html">Our Team</a>
+          <a href="contact-us.html" class="menu-cta">Contact Us</a>
+        </div>
+      </div>
+      
+      <!-- Use any element to open/show the overlay navigation menu -->
+      <p class="menu"><span onclick="openNav()">Menu</span></p>
+
+    </nav>
+  </header>
+  
+  <main>
+    <!-- Sidebar -->
+
+    <!-- Testimonial Slider -->
+      
+    <div class="tst-container">
+      
+      <div class="tst-contents">
+        <div class="tst-texts">
+        <p>Our clients can speak for us!</p>
+        </div>
+        <div class="tst-cards-container">
+          <div class="tst-cards">
+            <img src="Resources/customer1.jpg" alt="client-picture" class="tst-image">
+            <h3 class="tst-name">Wayne Ledoux</h3>
+            <p class="tst-feedback">Let's put it this way: You've saved me COUNTLESS HOURS of time and just this past week I had 4 different clients telling me that they had sales from campaigns that had your videos in them!</p>
+          </div>
+          <div class="tst-cards">
+            <img src="Resources/customer1.jpg" alt="client-picture" class="tst-image">
+            <h3 class="tst-name">Wayne Ledoux</h3>
+            <p class="tst-feedback">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque suscipit reprehenderit, id, odit ipsam, sapiente quod quaerat a ea molestias fuga saepe delectus iure et eveniet asperiores veniam praesentium assumenda!</p>
+          </div>
+          <div class="tst-cards">
+            <img src="Resources/customer1.jpg" alt="client-picture" class="tst-image">
+            <h3 class="tst-name">Wayne Ledoux</h3>
+            <p class="tst-feedback">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque suscipit reprehenderit, id, odit ipsam, sapiente quod quaerat a ea molestias fuga saepe delectus iure et eveniet asperiores veniam praesentium assumenda!</p>
+          </div>
+          <div class="tst-cards">
+            <img src="Resources/customer1.jpg" alt="client-picture" class="tst-image">
+            <h3 class="tst-name">Wayne Ledoux</h3>
+            <p class="tst-feedback">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque suscipit reprehenderit, id, odit ipsam, sapiente quod quaerat a ea molestias fuga saepe delectus iure et eveniet asperiores veniam praesentium assumenda!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+  <footer class="my-footer">
+    <p>Copyright © 2023 LADZ International</p>
+  </footer>
+
+  <!-- AOS Animations -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      easing: 'ease',
+      delay: 200,
+      duration: 800,
+    });
+  </script>
+
+</body>
+</html>
