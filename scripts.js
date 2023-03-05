@@ -35,3 +35,10 @@ function closeNav() {
 
 /* Testimonials */
 
+setInterval(function() {
+  var scrollPos = document.querySelector('.sample-div').scrollLeft;
+  document.querySelector('.sample-div').scrollLeft += 2;
+  if (scrollPos == document.querySelector('.sample-div').scrollLeft) {
+    document.querySelector('.sample-div').scrollLeft = 0;
+  }
+}, 20);

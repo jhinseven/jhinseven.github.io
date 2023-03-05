@@ -16,26 +16,70 @@
     <nav>
       <ul id="nav-list">
         <li><a class="nav-links" href="our-services.html">Services</a></li>
-        <li><a class="nav-links" href="#">Testimonials</a></li>
+        <li><a class="nav-links" href="testimonial.html">Testimonials</a></li>
         <li><a class="nav-links" href="our-team.html">Our Team</a></li>
         <li><a class="nav-links" class="nav-cta" href="contact-us.html">Contact Us</a></li>
       </ul>
-
-      <div id="myNav" class="overlay">
-        <!-- Button to close the overlay navigation -->
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <!-- Overlay content -->
-        <div class="overlay-content">
-          <a href="index.html">Home</a>
-          <a href="our-services.html">Services</a>
-          <a href="#">Testimonials</a>
-          <a href="our-team.html">Our Team</a>
-          <a href="contact-us.html" class="menu-cta">Contact Us</a>
-        </div>
-      </div>
       
-      <!-- Use any element to open/show the overlay navigation menu -->
-      <p class="menu"><span onclick="openNav()">Menu</span></p>
+          <!-- Mouse Click -->
+    <div class="cursor">
+      <div class="click-animation">
+        <div class="shape circle big"></div>
+        <div class="shape circle small"></div>
+        <div class="shape triangle yellow"></div>
+        <div class="shape triangle green"></div>
+        <div class="shape disc"></div>
+      </div>
+    </div>
+  
+    <script>
+      //Javascript for animate the cursor on mouse click
+      const cursorAnimation = document.querySelector(".cursor");
+      const cursors = document.querySelectorAll(".cursor");
+  
+      document.addEventListener("click", (e) => {
+        let x = e.clientX;
+        let y = e.clientY;
+  
+        cursorAnimation.style.top = y + "px";
+        cursorAnimation.style.left = x + "px";
+  
+        cursors.forEach((cursor) => {
+          cursor.classList.add("active");
+  
+          function removeCursorActive(){
+            cursor.classList.remove("active");
+          }
+  
+          setTimeout(removeCursorActive, 1000);
+        });
+        
+        let cursorClone = cursorAnimation.cloneNode(true);
+        document.querySelector("body").appendChild(cursorClone);
+  
+        setTimeout(() => {
+          cursorClone.remove();
+        }, 1000);
+      });
+    </script>
+
+      <!-- Menu -->
+
+    <div id="myNav" class="overlay">
+      <!-- Button to close the overlay navigation -->
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <!-- Overlay content -->
+      <div class="overlay-content">
+        <a href="index.html">Home</a>
+        <a href="our-services.html">Services</a>
+        <a href="testimonial.html">Testimonials</a>
+        <a href="our-team.html">Our Team</a>
+        <a href="contact-us.html" class="menu-cta">Contact Us</a>
+      </div>
+    </div>
+    
+    <!-- Use any element to open/show the overlay navigation menu -->
+    <p class="menu"><span onclick="openNav()">Menu</span></p>
 
     </nav>
   </header>
@@ -46,10 +90,10 @@
     <!-- Testimonial Slider -->
       
     <div class="tst-container">
-      
+
       <div class="tst-contents">
         <div class="tst-texts">
-        <p>Our clients can speak for us!</p>
+          <p>Our clients can speak for us!</p>
         </div>
         <div class="tst-cards-container">
           <div class="tst-cards">
@@ -73,8 +117,12 @@
             <p class="tst-feedback">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque suscipit reprehenderit, id, odit ipsam, sapiente quod quaerat a ea molestias fuga saepe delectus iure et eveniet asperiores veniam praesentium assumenda!</p>
           </div>
         </div>
+        
+        
       </div>
+      
     </div>
+    
 
   </main>
   <footer class="my-footer">
