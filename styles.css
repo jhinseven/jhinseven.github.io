@@ -347,6 +347,9 @@ header nav ul li:last-child {
 }
 
 #hero-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   animation: transitionIn 1s;
   text-align: center;
 }
@@ -362,19 +365,72 @@ header nav ul li:last-child {
   }
 }
 
-.hero > p {
-  color: #545454;
-}
 
 .hero-header {
   font-size: 36px;
-  margin-bottom: .5em;
+  margin: 0;
   margin-top: 300px;
+  margin-bottom: 10px;
 }
 
 .hero-slogan {
   font-size: 18px;
-  margin-bottom: 2em;
+  padding: 0 5%;
+  margin: 0;
+}
+
+.cta {
+  background-color: #E69138;
+  border-radius: 5px;
+  color: black;
+  padding: .5em 1em;
+  text-decoration: none;
+  transition: .3s;
+  margin-top: 20px;
+}
+
+.sm-below {
+  margin-top: 100px;
+  animation: up-down 1.5s ease-in-out infinite;
+  position: relative;
+  opacity: 1;
+  transition: 1s ease-out;
+}
+
+.sm-below.hide {
+  transform: translateY(-20px);
+  opacity: 0;
+}
+
+.sm-text {
+  margin: 0;
+  padding: 0;
+}
+
+.hero-arrow {
+  display: block;
+}
+
+
+@keyframes up-down {
+  0% {
+    top: 0;
+  }
+  20% {
+    top: 20px;
+  }
+  40% {
+    top: 0;
+  }
+  60% {
+    top: 0;
+  }
+  80% {
+    top: 0;
+  }
+  100% {
+    top: 0;
+  }
 }
 
 @media screen and (max-width:400px) {
@@ -384,17 +440,6 @@ header nav ul li:last-child {
   .hero-slogan {
     font-size: 15px;
   }
-}
-
-.cta {
-  background-color: #E69138;
-  border: 2px solid #fff;
-  border-radius: 5px;
-  color: black;
-  padding: 1em 2em;
-  margin-top: 20px;
-  text-decoration: none;
-  transition: .3s;
 }
 
 .cta:hover {
@@ -488,6 +533,24 @@ header nav ul li:last-child {
   text-align: center;
   text-align: left;
 }
+
+.go-up {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 2px solid black;
+}
+
+.up-icon {
+  padding: 15px;
+  color: black;
+}
+
+
 
 @media (max-width: 750px) {
   .about-us-container {

@@ -22,6 +22,17 @@ window.addEventListener("scroll", function() {
   }
 });
 
+/* See more below */
+window.addEventListener("scroll", function() {
+  var sidebar = document.querySelector(".sm-below");
+  var showSidebar = window.scrollY > 100;
+  if (showSidebar) {
+    sidebar.classList.add("hide");
+  } else {
+    sidebar.classList.remove("hide");
+  }
+});
+
 
 /* Menu */
 /* Open when someone clicks on the span element */
