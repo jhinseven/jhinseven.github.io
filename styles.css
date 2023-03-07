@@ -411,6 +411,7 @@ header nav ul li:last-child {
   gap: 2em;
   padding: 5%;
   background-image: url(Resources/our-team-bg.jpg);
+  max-width: 1500px;
 }
 
 .about-us-container {
