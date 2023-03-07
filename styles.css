@@ -462,7 +462,6 @@ header nav ul li:last-child {
   gap: 2em;
   padding: 5%;
   background-image: url(Resources/our-team-bg.jpg);
-  max-width: 1500px;
 }
 
 .about-us-container {
@@ -470,6 +469,7 @@ header nav ul li:last-child {
   justify-content: space-around;
   align-items: center;
   text-align: left;
+  max-width: 1700px;
 }
 
 .img-title {
