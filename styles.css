@@ -382,11 +382,17 @@ header nav ul li:last-child {
 .cta {
   background-color: #E69138;
   border-radius: 5px;
-  color: black;
+  color: white;
   padding: .5em 1em;
   text-decoration: none;
   transition: .3s;
   margin-top: 20px;
+}
+
+@media (max-width:450px) {
+  .cta {
+    padding: .25em .5em;
+  }
 }
 
 .sm-below {
@@ -543,6 +549,7 @@ header nav ul li:last-child {
   background-color: transparent;
   border-radius: 50%;
   border: 2px solid black;
+  z-index: 100;
 }
 
 .up-icon {
