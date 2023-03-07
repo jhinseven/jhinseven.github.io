@@ -405,20 +405,58 @@ header nav ul li:last-child {
 /* About-Us section */
 
 .about-us {
-  padding: 40px;
-  text-align: center;
-}
-
-.about-us-content {
-  padding: 0 10%;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  gap: 2em;
+  padding: 5%;
+  background-image: url(Resources/our-team-bg.jpg);
+}
+
+.about-us-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   text-align: left;
+}
+
+.img-title {
+  width: 50%;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.img-title> h2 {
+  color: #545454;
+  padding: 5px;
+  background-color:white;
+  border-radius: 20px;
+}
+.about-us-container p {
+  width: 40%;
 }
 
 .about-us h2 {
   font-size: 36px;
   margin-bottom: 20px;
+}
+
+.about-us-img {
+  background-image: url(about-us.jpg);
+  background-size: cover;
+}
+
+.vision-img {
+  background-image: url(vision.jpg);
+  background-size: cover;
+}
+
+.mission-img {
+  background-image: url(mission.jpg);
+  background-size: cover;
 }
 
 .about-us p {
@@ -450,23 +488,48 @@ header nav ul li:last-child {
   text-align: left;
 }
 
-.vision-mission {
-  display: grid;
-  grid-auto-flow: column;
-  gap: 1rem;
-  padding: 0 10%;
-}
-
-@media screen and (max-width:450px) {
-  .about-us {
-    padding: 25px 10px;
-  }
-  .about-us-content {
-    padding: 0 20px;
-  }
-  .vision-mission {
+@media (max-width: 750px) {
+  .about-us-container {
     display: flex;
     flex-direction: column;
+  }
+  .img-title {
+    width: 90%;
+    height: 300px;
+  }
+  .img-title h2 {
+    font-size: 30px;
+  }
+  .about-us-container p {
+    width: 75%;
+  }
+  .about-us-container:nth-child(2) {
+    flex-direction: column-reverse;
+  }
+  
+}
+
+@media (max-width: 400px) {
+  .about-us {
+    gap: 1em;
+    padding: 10% 5%;
+  }
+  .about-us-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .img-title {
+    width: 100%;
+    height: 200px;
+  }
+  .img-title h2 {
+    font-size: 20px;
+  }
+  .about-us-container p {
+    width: 90%;
+  }
+  .about-us-container:nth-child(2) {
+    flex-direction: column-reverse;
   }
 }
 
