@@ -211,9 +211,16 @@ header nav a {
   border-radius: 5px;
 }
 
-@media only screen and (max-width:785px) {
+@media only screen and (max-width:760px) {
   .header-main nav ul {
     display: none;
+  }
+}
+
+@media (min-width:650px) and (max-width:930px) {
+  header nav a {
+    font-size: 20px;
+    padding: 5px;
   }
 }
 
@@ -234,7 +241,7 @@ header nav ul li:last-child {
   display: none;
 }
 
-@media only screen and (max-width: 785px) {
+@media only screen and (max-width: 760px) {
   .menu {
     display: block;
   }
@@ -641,6 +648,12 @@ header nav ul li:last-child {
   align-items: center;
 }
 
+.services-links {
+  background-color: hsla(0, 0%, 50%, 0.678);
+  border-radius: 5px;
+  color: white;
+}
+
 @media screen and(max-width:500px) {
   .services-header {
     font-size: 30px;
@@ -794,21 +807,26 @@ img {
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
     max-width: 100%;
+    transition: .4s ease;
+}
+
+.column:hover {
+  box-shadow: 2.5px 2.5px 2.5px 2.5px #545454;
 }
 
 @media (min-width: 576px) {
     .column {
-        -ms-flex: 0 0 50%;
-        flex: 0 0 50%;
-        max-width: 50%;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 70%;
     }
 }
 
 @media (min-width: 768px) {
     .column {
-        -ms-flex: 0 0 33.333333%;
-        flex: 0 0 33.333333%;
-        max-width: 33.333333%;
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
     }
 }
 
@@ -906,11 +924,12 @@ img {
   line-height: 16px;
   text-align: center;
   color: #ffffff;
-  transition: all .3s;
+  transition: .3s ease;
   margin-top: 50px;
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 }
+
 
 .team-3 .team-social a.social-tw {
   background: #00acee;
@@ -949,13 +968,14 @@ img {
   padding: 70px 20px 20px 20px;
   margin-top: -50px;
   text-align: center;
-  background-color: #545454;
-  color: white;
-  transition: all .5s;
+  background-color: transparent;
+  color: black;
+  transition: 3s ease;
 }
 
 .team-3:hover .team-content {
   background: black;
+  box-shadow: 5px 5px #E69138;
 }
 
 .team-3:hover .team-content h2,
@@ -977,10 +997,9 @@ img {
 }
 
 .team-3 .team-content h4 {
-  font-size: 16px;
+  font-size: 13px;
   font-weight: 300;
   font-style: italic;
-  letter-spacing: 1px;
   margin-bottom: 0;
 }
 
