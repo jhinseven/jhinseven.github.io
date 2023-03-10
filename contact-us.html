@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-  <script src="scripts.js"></script>
+  <script src="scripts.js" defer></script>
 </head>
 <body>
   <!-- Header section -->
@@ -84,27 +84,23 @@
   </header>
   <main>
   <div class="ct-page-container">
-    <div class="section-title">
-      <h1 class="section-header" data-aos="fade-right">Contact Us BABYYYYY!!!!!</h1>
-    </div>
     <div class="ct-container">
         <!-- Image -->
         <div class="ct-image-container" data-aos="zoom-in">
           <img src="sample.jpg" class="ct-image" alt="Contact us!">
         </div>
-        <!-- Submit Form -->
-        <div class="form-container" data-aos="zoom-in">
-        <form action="/submit-form" method="post">
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required><br>
-        
-          <label for="message">Message:</label>
-          <textarea id="message" name="message" required></textarea><br>
-        
-          <input type="submit" value="Submit">
-        </form>
+        <div class="contact-links">
+          <div class="ct-texts" data-aos="zoom-in">
+            <h1 class="ct-header">Contact Us!</h1>
+            <h3>You can message us directly by visiting these links!</h3>
+          </div>
+          <div class="ct-links-images">
+            <a data-aos="fade-right" href="https://www.facebook.com/ladzmedia" target="_blank"><img src="fb.png" alt="Facebook"></a>
+            <a data-aos="fade-up" href="https://www.instagram.com/ladzmediaa/?igshid=YmMyMTA2M2Y%3D" target="_blank"><img src="insta.png" alt="Instagram"></a>
+            <a data-aos="fade-left" href="https://www.tiktok.com/@ladzmedia" target="_blank"><img src="tiktok.png" alt="Tiktok"></a>
+          </div>
         </div>
-    </div>
+        </div>
   </div>
   </main>
   <footer class="my-footer">
