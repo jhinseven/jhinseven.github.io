@@ -1086,7 +1086,7 @@ img {
 }
 
 .ct-links-images img {
-  width: 100px;
+  width: 75px;
   height: auto;
 }
 
@@ -1095,7 +1095,7 @@ img {
     width: 90%;
   }
   .ct-links-images img {
-    width: 75px;
+    width: 60px;
   }
   .ct-header {
     font-size: 25px;
@@ -1190,8 +1190,6 @@ img {
   width: 30%;
   border-radius: 50%;
 }
-
-
 
 /* Footer Styles */
 
