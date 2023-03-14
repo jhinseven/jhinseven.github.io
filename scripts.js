@@ -53,3 +53,4 @@ setInterval(function() {
     document.querySelector('.sample-div').scrollLeft = 0;
   }
 }, 20);
+
